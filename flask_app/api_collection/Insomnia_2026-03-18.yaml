@@ -1,0 +1,135 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_4f43e9b937444e62a67bad02e8d70d03
+  created: 1773768813804
+  modified: 1773768813804
+  description: ""
+collection:
+  - url: http://127.0.0.1:5000/api/posts
+    name: List Posts
+    meta:
+      id: req_a94de6b3777446da9c874fd64bd4a6e7
+      created: 1773768813824
+      modified: 1773768875307
+      isPrivate: false
+      description: ""
+      sortKey: -1773768813824
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5000/api/post
+    name: Add Post
+    meta:
+      id: req_654ad608f8284883b4baa567296dcad9
+      created: 1773768894595
+      modified: 1773768951689
+      isPrivate: false
+      description: ""
+      sortKey: -1773767786971.5
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"author": "hahahahha",
+        		"content": "hehehehehe",
+        		"id": "2",
+        		"title": "Agora sim voltei"
+        	}
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5000/api/post/10
+    name: Edit Post
+    meta:
+      id: req_fa56a80e2d30426baea905f3642d4ea5
+      created: 1773768988141
+      modified: 1773769024286
+      isPrivate: false
+      description: ""
+      sortKey: -1773767273545.25
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"author": "teste",
+        		"content": "teste",
+        		"title": "Teste"
+        	}
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:5000/api/post/10
+    name: Delete Post
+    meta:
+      id: req_0187ad2b9a964d5e862782e5e30116c2
+      created: 1773769061203
+      modified: 1773769133603
+      isPrivate: false
+      description: ""
+      sortKey: -1773769061203
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.4.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d4c485ffe095b18ad14f6c36842ea3283c3d429b
+    created: 1773768813813
+    modified: 1773768813812
+environments:
+  name: Base Environment
+  meta:
+    id: env_d4c485ffe095b18ad14f6c36842ea3283c3d429b
+    created: 1773768813808
+    modified: 1773768813808
+    isPrivate: false
